@@ -55,6 +55,5 @@ class Comment(models.Model):
             models.Index(fields=['created']),
         ]
 
-
-def __str__(self):
-    return f'Comment by {self.name} on {self.post}'
+    def __str__(self):
+        return f'Comment by {self.name} on {self.post}'
